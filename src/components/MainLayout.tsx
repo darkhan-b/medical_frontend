@@ -17,6 +17,11 @@ const items = [
     icon: <BarChartOutlined />,
     label: <Link to="/results">Results</Link>,
   },
+  {
+    key: "3",
+    icon: <BarChartOutlined />,
+    label: <Link to="/admin/users">Users (only for admin)</Link>,
+  },
 ];
 
 const MainLayout: React.FC = () => {

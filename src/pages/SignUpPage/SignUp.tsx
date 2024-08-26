@@ -98,17 +98,6 @@ const SignUpPage = () => {
                 </div>
                 <Input placeholder="Your full name" name="fio" allowClear />
               </div>
-              <div style={{ padding: "5px 20px 20px 20px" }}>
-                <div style={{ display: "flex", marginBottom: 10 }}>
-                  Your IIN
-                </div>
-                <Input
-                  placeholder="Your IIN"
-                  name="iin"
-                  allowClear
-                  maxLength={12}
-                />
-              </div>
 
               <div style={{ padding: "5px 20px 20px 20px" }}>
                 <div style={{ display: "flex", marginBottom: 10 }}>
