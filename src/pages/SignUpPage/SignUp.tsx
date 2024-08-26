@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Login.scss";
+import "./SignUp.scss";
 import { Button, Col, Input, Row, Typography, Spin, Flex } from "antd";
 import { useNavigate } from "react-router-dom";
 
 const { Title } = Typography;
 
-const LoginPage = () => {
+const SignUpPage = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -72,4 +72,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUpPage;
