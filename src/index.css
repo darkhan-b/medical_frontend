@@ -1,5 +1,9 @@
 body {
   margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #4e76c2 0%, #385b85 50%, #4e76c2 100%);
+  background-size: 100% 200%; /* Эта строка делает градиент повторяющимся */
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

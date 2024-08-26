@@ -1,0 +1,18 @@
+.login_page {
+    top: 0;
+    left: 0;
+   
+
+
+
+    &__loginBlock {
+        text-align: center;
+        border-radius: 8px;
+        max-width: 500px;
+        width: 100%;
+        background-color: #ffffff;
+    }
+    &__divider {
+        border: 0.8px solid #f0f0f0;
+    }
+}
