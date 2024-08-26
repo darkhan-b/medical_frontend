@@ -1,7 +1,7 @@
 // MainLayout.tsx
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import { UserOutlined, VideoCameraOutlined } from "@ant-design/icons";
+import { BarChartOutlined, UserOutlined } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 
 const { Header, Content, Sider } = Layout;
@@ -14,7 +14,7 @@ const items = [
   },
   {
     key: "2",
-    icon: <VideoCameraOutlined />,
+    icon: <BarChartOutlined />,
     label: <Link to="/results">Results</Link>,
   },
 ];

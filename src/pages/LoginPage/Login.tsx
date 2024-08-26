@@ -21,7 +21,7 @@ const LoginPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      navigate("/");
+      navigate("/profile");
     }, 1500);
   };
   return (
