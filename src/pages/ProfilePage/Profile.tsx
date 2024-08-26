@@ -2,6 +2,8 @@ import { Col, Input, Row, Select } from "antd";
 import React from "react";
 
 function Profile() {
+  const userProfile = JSON.parse(localStorage.getItem("userProfile") || "{}");
+  console.log(userProfile);
   return (
     <div>
       <div
@@ -21,7 +23,7 @@ function Profile() {
         </Col>
         <Col span={6}>
           <div style={{ marginBottom: 10 }}>Full name:</div>
-          <Input disabled placeholder="DARKHAN BAIBULAT" />
+          <Input disabled value={userProfile.fullname} />
         </Col>
         <Col span={6}>
           <div style={{ marginBottom: 10 }}>Your Role:</div>
@@ -42,6 +44,7 @@ function Profile() {
         <Col span={6}>
           <div style={{ marginBottom: 10 }}>Gender:</div>
           <Select
+            value={userProfile.gender}
             options={[
               {
                 value: "1",
@@ -52,6 +55,14 @@ function Profile() {
                 label: "Female",
               },
             ]}
+            style={{ width: "100%" }}
+            placeholder=""
+          />
+        </Col>
+        <Col span={6}>
+          <div style={{ marginBottom: 10 }}>Date of Birth:</div>
+          <Input
+            value={userProfile.birth}
             style={{ width: "100%" }}
             placeholder=""
           />

@@ -13,7 +13,8 @@ export const ROUTES = {
   MAIN: '/',
   LOGIN: "/login",
   SIGNUP: '/signup',
-  PROFILE: '/profile',
+  MY_PROFILE: '/profile',
+  PROFILE: '/profile/:id',
   RESULTS: '/results',
   USERS: '/admin/users'
 };
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
     children: [
       {
         path: ROUTES.PROFILE,
+        element: <Profile />,
+      },
+      {
+        path: ROUTES.MY_PROFILE,
         element: <Profile />,
       },
       {
