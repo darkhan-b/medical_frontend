@@ -17,15 +17,21 @@ const LoginPage = () => {
     }, 1000);
   };
 
+  const handleSignIn = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      navigate("/");
+    }, 1500);
+  };
   return (
     <div className="login_page">
       <Row className="login_page__block">
-        <Col span={12}></Col>
-        <Col span={12}>
+        <Col span={24}>
           <div className="login_page__loginBlock">
             {loading ? (
               <div className="login_page__spinner">
-                <Spin size="large" />
+                <Spin className="ant-spin-text" size="default" />
               </div>
             ) : (
               <>
@@ -55,7 +61,11 @@ const LoginPage = () => {
                 </div>
                 <div className="login_page__divider"></div>
                 <Flex vertical style={{ padding: 20 }}>
-                  <Button type="primary" style={{ marginBottom: 15 }}>
+                  <Button
+                    type="primary"
+                    style={{ marginBottom: 15 }}
+                    onClick={handleSignIn}
+                  >
                     Sign In
                   </Button>
 
